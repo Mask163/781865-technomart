@@ -75,7 +75,30 @@
            <h2 class="visualy-hidden">Адрес организации на карте</h2>
            <p>
                <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
+                <!--Картинки таких размеров в 100% разрешении в материалах нет-->
            </p>
+           <button class="modal-close" type="button">Закрыть</button>
+       </section>
+       
+       <section class="modal modal-feedback">
+           <h2 class="visualy-hidden">Обратная связь</h2>
+           <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="feedback-form-top">
+                   <p>
+                       <label for="user-name">Ваше имя:</label>
+                       <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+                   </p>
+                   <p>
+                       <label for="user-mail">Ваш e-mail:</label>
+                       <input type="text" id="user-mail" name="user-mail" placeholder="email@example.com">
+                   </p>
+                </div>
+                <p>
+                    <label for="user-text">Текст письма:</label>
+                    <textarea name="user-text" id="user-text" placeholder="В свободной форме"></textarea>
+                </p>
+                <button class="button" type="submit">Отправить</button>
+           </form>
            <button class="modal-close" type="button">Закрыть</button>
        </section>
     </main>  
