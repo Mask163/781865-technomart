@@ -52,21 +52,55 @@
            <li><a class="breadcrumbs-current">Перфораторы</a></li>
        </ul>
        <h1>Перфораторы</h1>
-       <section class="filter">
-           <h2 class="visually-hidden">Фильтр товаров</h2>
-           <ul class="producer">
-               <li>BOSCH</li>
-               <li>ИНТЕРСКОЛ</li>
-               <li>MAKIta</li>
-               <li>Dewalt</li>
-               <li>Hitachi</li>
-           </ul>
-           <ul class="energy">
-               <li>Аккумуляторные</li>
-               <li>Сетевые</li>
-           </ul>
-           <button class="btn">Показать</button>
+       
+       
+       <section class="filters">
+           <h2>Фильтр товаров</h2>
+           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+               <!-- Фильтр по цене -->
+               <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden" type="checkbox" name="bosch" id="filter-bosch" checked>
+                            <label for="filter-bosch">BOSCH</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden" type="checkbox" name="interskol" id="filter-interskol">
+                            <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden" type="checkbox" name="makita" id="filter-makita" checked>
+                            <label for="filter-makita">MAKIta</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden" type="checkbox" name="dewalt" id="filter-dewalt">
+                            <label for="filter-dewalt">Dewalt</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi">
+                            <label for="filter-hitachi">Hitachi</label>
+                        </li>
+                    </ul>
+               </fieldset>
+               <fieldset>
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden" type="radio" name="energy-group" value="accumulator" id="filter-accumulator" checked>
+                            <label for="filter-accumulator">Аккумуляторные</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden" type="radio" name="energy-group" value="network" id="filter-network">
+                            <label for="filter-network">Сетевые</label>
+                        </li>
+                    </ul>
+                </fieldset>
+               <button class="filter-button button" type="submit">Показать</button>
+           </form>
        </section>
+       
+       
        <section class="catalog">
            <h2 class="visually-hidden">Каталог товаров</h2>
            <ul class="catalog-list">
