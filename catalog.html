@@ -4,44 +4,54 @@
     <meta charset="utf-8">
     <title>Каталог товаров</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
+       
+       
+       
         <div class="header-top">
-            <a class="logo-top" href="index.html">Техномарт</a>
-            <ul>
-                <li class="search">
-                    <label for="search">Поиск:</label>
-                    <input id="search" type="text" name="search">
-                </li>
-                <li><a href="bookmarks.html">Закладки: 0</a></li>
-                <li><a href="basket.html">Корзина: 10</a></li>
-                <li><a class="order" href="order.html">Оформить заказ</a></li>
-            </ul>
+            <div class="logo-top">Техномарт</div>
+            <div class="search">
+                <form action="https://echo.htmlacademy.ru" method="get">
+                    <div class="search-button">
+                        <span class="search-button-normal"></span>
+                        <span class="search-button-click"></span>
+                    </div>
+                    <label class="search-label" for="search">Поиск:</label>
+                    <input class="search-field" id="search" type="search" name="search">
+                </form>
+            </div>
+            <a class="bookmarks" href="bookmarks.html">Закладки: 0</a>
+            <a class="basket-good" href="basket.html">Корзина: 10</a>
+            <a class="order" href="order.html">Оформить заказ</a>
         </div>
+        
+        
+        
         <div class="header-middle">
             <p>
                 Интернет-магазин
                 строительных материалов
                 и инструментов для ремонта
             </p>
-            <p>
+            <div class="information">
                 <a class="number" href="#">+7 (812) 555-05-55</a>
                 <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-            </p>
+            </div>
             <div class="user">
-               <a href="profile.html">Равшан Джамшутович</a>
-               <ul>
+               <a class="user-name" href="profile.html">Равшан Джамшутович</a>
+               <ul class="user-atribute">
                    <li><a href="orders.html">Мои заказы</a></li>
                    <li><a href="profile.html">Личный кабинет</a></li>
                </ul>
             </div>
         </div>
         <nav class="main-nav">
-            <ul>
+            <ul class="site-navigation">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="company.html">Компания</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
@@ -53,7 +63,7 @@
         </nav>
     </header>
 
-   <main>
+   <main class="catalog-main">
        <ul class="breadcrumbs">
            <li><a href="index.html">Главная</a></li>
            <li><a href="catalog.html">Каталог</a></li>
@@ -64,7 +74,6 @@
        
        
        <section class="filters">
-           <h2>Фильтр товаров</h2>
            <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                <!-- Фильтр по цене -->
                <fieldset>
@@ -119,7 +128,7 @@
                     </p>
                     <div class="hover-button">
                         <a class="btn-buy" href="buy.html">Купить</a>
-                        <button class="btn-bookmark" type="button">В закладки</button>
+                        <a class="btn-bookmark" href="bookmark.html">В закладки</a>
                     </div>
                     <h3>
                        <a href="catalog-item.html">
@@ -137,7 +146,7 @@
                     </p>
                     <div class="hover-button">
                         <a class="btn-buy" href="buy.html">Купить</a>
-                        <button class="btn-bookmark" type="button">В закладки</button>
+                        <a class="btn-bookmark" href="bookmark.html">В закладки</a>
                     </div>
                     <h3>
                        <a href="catalog-item.html">
@@ -155,7 +164,7 @@
                     </p>
                     <div class="hover-button">
                         <a class="btn-buy" href="buy.html">Купить</a>
-                        <button class="btn-bookmark" type="button">В закладки</button>
+                        <a class="btn-bookmark" href="bookmark.html">В закладки</a>
                     </div>
                     <h3>
                        <a href="catalog-item.html">
@@ -172,7 +181,7 @@
                     </p>
                     <div class="hover-button">
                         <a class="btn-buy" href="buy.html">Купить</a>
-                        <button class="btn-bookmark" type="button">В закладки</button>
+                        <a class="btn-bookmark" href="bookmark.html">В закладки</a>
                     </div>
                     <h3>
                        <a href="catalog-item.html">
@@ -190,7 +199,7 @@
                     </p>
                     <div class="hover-button">
                         <a class="btn-buy" href="buy.html">Купить</a>
-                        <button class="btn-bookmark" type="button">В закладки</button>
+                        <a class="btn-bookmark" href="bookmark.html">В закладки</a>
                     </div>
                     <h3>
                        <a href="catalog-item.html">
@@ -208,7 +217,7 @@
                     </p>
                     <div class="hover-button">
                         <a class="btn-buy" href="buy.html">Купить</a>
-                        <button class="btn-bookmark" type="button">В закладки</button>
+                        <a class="btn-bookmark" href="bookmark.html">В закладки</a>
                     </div>
                     <h3>
                        <a href="catalog-item.html">
@@ -225,7 +234,7 @@
                     </p>
                     <div class="hover-button">
                         <a class="btn-buy" href="buy.html">Купить</a>
-                        <button class="btn-bookmark" type="button">В закладки</button>
+                        <a class="btn-bookmark" href="bookmark.html">В закладки</a>
                     </div>
                     <h3>
                        <a href="catalog-item.html">
@@ -243,7 +252,7 @@
                     </p>
                     <div class="hover-button">
                         <a class="btn-buy" href="buy.html">Купить</a>
-                        <button class="btn-bookmark" type="button">В закладки</button>
+                        <a class="btn-bookmark" href="bookmark.html">В закладки</a>
                     </div>
                     <h3>
                        <a href="catalog-item.html">
@@ -261,7 +270,7 @@
                     </p>
                     <div class="hover-button">
                         <a class="btn-buy" href="buy.html">Купить</a>
-                        <button class="btn-bookmark" type="button">В закладки</button>
+                        <a class="btn-bookmark" href="bookmark.html">В закладки</a>
                     </div>
                     <h3>
                        <a href="catalog-item.html">
@@ -280,23 +289,23 @@
    
     <footer class="main-footer">
            <div class="footer-top">
-               <a class="logo-bottom" href="index.html">Техномарт</a>
-               <nav class="nav">
+               <div class="logo-bottom">
+                   <img src="img/logo-bottom.jpg" width="220" height="68" alt="Логотип интернет-магазина Техномарт">
+               </div>
+               <nav class="footer-nav footer-nav-top">
                    <ul>
-                       <li><a href="company.html"></a>Компания</li>
-                       <li><a href="news.html"></a>Новости</li>
-                       <li><a href="catalog.html"></a>Каталог</li>
-                       <li><a href="delivery.html"></a>Доставка</li>
-                       <li><a href="contact.html"></a>Контакты</li>
+                       <li><a href="company.html">Компания</a></li>
+                       <li><a href="news.html">Новости</a></li>
+                       <li><a href="catalog.html">Каталог</a></li>
+                       <li><a href="delivery.html">Доставка</a></li>
+                       <li><a href="contact.html">Контакты</a></li>
                    </ul>
                </nav>
            </div>
            <div class="footer-middle">
-               <p>
-                   г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                   +7 (812) 555-05-55
-               </p>
-                <nav class="nav">
+               <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                  +7 (812) 555-05-55</p>
+                <nav class="footer-nav footer-nav-middle">
                    <ul>
                        <li><a href="material.html">Материалы</a></li>
                        <li><a href="equipment.html">Техника</a></li>

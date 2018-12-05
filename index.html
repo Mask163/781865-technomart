@@ -4,39 +4,49 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
+       
+       
+       
         <div class="header-top">
-            <a class="logo-top">Техномарт</a>
-            <ul>
-                <li class="search">
-                    <label for="search">Поиск:</label>
-                    <input id="search" type="text" name="search">
-                </li>
-                <li><a href="bookmarks.html">Закладки: 0</a></li>
-                <li><a href="basket.html">Корзина: 0</a></li>
-                <li><a class="order" href="order.html">Оформить заказ</a></li>
-            </ul>
+            <div class="logo-top">Техномарт</div>
+            <div class="search">
+                <form action="https://echo.htmlacademy.ru" method="get">
+                    <div class="search-button">
+                        <span class="search-button-normal"></span>
+                        <span class="search-button-click"></span>
+                    </div>
+                    <label class="search-label" for="search">Поиск:</label>
+                    <input class="search-field" id="search" type="search" name="search">
+                </form>
+            </div>
+            <a class="bookmarks" href="bookmarks.html">Закладки: 0</a>
+            <a class="basket" href="basket.html">Корзина: 0</a>
+            <a class="order" href="order.html">Оформить заказ</a>
         </div>
+        
+        
+        
         <div class="header-middle">
             <p>Интернет-магазин
                строительных материалов
                и инструментов для ремонта</p>
-            <p>
+            <div class="information">
                 <a class="number" href="#">+7 (812) 555-05-55</a>
                 <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-            </p>
+            </div>
             <ul class="user-navigation">
                 <li><a href="login.html">Войти</a></li>
                 <li><a href="registration.html">Регистрация</a></li>
             </ul>
         </div>
         <nav class="main-nav">
-            <ul>
+            <ul class="site-navigation">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="company.html">Компания</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
@@ -49,28 +59,28 @@
     </header>
     
     
-    <main class="main">
+    <main class="index-main">
        <div class="container">
         <section class="promo">
             <section class="offers-item materials">
                 <p><b>Материалы</b></p>
-                <a class="btn" href="materials.html">На любой вкус</a>
+                <a class="btn-promo" href="materials.html">На любой вкус</a>
             </section>
             <section class="offers-item tool">
                 <p><b>Инструмент</b></p>
-                <a class="btn" href="tool.html">На все случаи</a>
+                <a class="btn-promo" href="tool.html">На все случаи</a>
             </section>
             <section class="offers-item technics">
                 <p><b>Техника</b></p>
-                <a class="btn" href="technics.html">Для стройки</a>
+                <a class="btn-promo" href="technics.html">Для стройки</a>
             </section>
             <section class="offers-item discounts">
                 <p><b>Скидки 50%</b></p>
-                <a class="btn" href="discounts.html">На 350 товаров</a>
+                <a class="btn-promo" href="discounts.html">На 350 товаров</a>
             </section>
             <section class="offers-item delivery">
                 <p><b>Доставка</b></p>
-                <a class="btn" href="delivery.html">Бесплатно</a>
+                <a class="btn-promo" href="delivery.html">Бесплатно</a>
             </section>
             
             <!--Сделал попытку на основании курсов по слайдеру на CSS-->
@@ -280,7 +290,7 @@
                 </div>
             </div>
         </section>
-        
+       
         
        <section class="about-us">
            <section class="company">
@@ -311,21 +321,23 @@
       
     <footer class="main-footer">
            <div class="footer-top">
-               <a class="logo-bottom">Техномарт</a>
-               <nav class="nav">
+               <div class="logo-bottom">
+                   <img src="img/logo-bottom.jpg" width="220" height="68" alt="Логотип интернет-магазина Техномарт">
+               </div>
+               <nav class="footer-nav footer-nav-top">
                    <ul>
-                       <li><a href="company.html"></a>Компания</li>
-                       <li><a href="news.html"></a>Новости</li>
-                       <li><a href="catalog.html"></a>Каталог</li>
-                       <li><a href="delivery.html"></a>Доставка</li>
-                       <li><a href="contact.html"></a>Контакты</li>
+                       <li><a href="company.html">Компания</a></li>
+                       <li><a href="news.html">Новости</a></li>
+                       <li><a href="catalog.html">Каталог</a></li>
+                       <li><a href="delivery.html">Доставка</a></li>
+                       <li><a href="contact.html">Контакты</a></li>
                    </ul>
                </nav>
            </div>
            <div class="footer-middle">
                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                   +7 (812) 555-05-55</p>
-                <nav class="nav">
+                <nav class="footer-nav footer-nav-middle">
                    <ul>
                        <li><a href="material.html">Материалы</a></li>
                        <li><a href="equipment.html">Техника</a></li>

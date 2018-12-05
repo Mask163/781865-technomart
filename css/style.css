@@ -1,0 +1,454 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #f4f7f9;
+}
+
+.main-header ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header-top {
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+    
+    background-color: #293449;
+}
+
+.header-top a {
+    color: #ffffff;
+}
+
+.logo-top {
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    
+    text-transform: uppercase;
+    background-color: #ee3643;
+}
+
+.logo-top:hover {
+    background-color: #ca2c37;
+}
+
+.logo-top:active {
+    background-color: #ba2732;
+}
+
+.search-field {
+    background-color: #293449;
+    border: none;
+}
+
+.order {
+    background-color: #63a63e;
+}
+
+.search:hover .search-field,
+.search:hover,
+.header-top a:not(.order):hover {
+    background-color: #212a3a;
+}
+
+.order:hover {
+    background-color: #5fbb2d;
+}
+
+.search:focus {
+    background-color: #ffffff;
+}
+
+.bookmarks:active,
+.basket:active {
+    background-color: #161d29;
+    opacity: 0.6;
+}
+
+.order:active {
+    background-color: #518534;
+    opacity: 0.6;
+}
+
+.header-middle p {
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
+    font-style: italic;
+}
+
+.number {
+    padding: 8px 70px;
+    
+    font-size: 21px;
+    line-height: 21px;
+    color: #ee3643;
+    
+    border: 3px solid #ffffff;
+}
+
+.adress {
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+}
+
+.user-navigation,
+.site-navigation {
+    list-style: none;
+}
+
+.user-navigation a {
+    font-size: 21px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.user-navigation li {
+    background-color: #ffffff;
+}
+
+.user-navigation a:hover {
+    color: #ee3643;
+}
+
+.user-navigation a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.main-nav {
+    font-size: 17px;
+    line-height: 17px;
+    background-color: #32425c;
+    
+    border-bottom: 5px solid #293449;
+}
+
+.site-navigation a {
+    color: #ffffff;
+}
+
+.site-navigation a:hover {
+    background-color: #293449;
+}
+
+.site-navigation a:active {
+    opacity: 0.5;
+    background-color: #1d2739;
+}
+
+.service {
+    background-color: #f4f8f9;
+}
+
+.service h2,
+.about-us h2{
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.service p,
+.about-us p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.service h3 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #32425c;
+}
+
+.slider-controls li {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+    background-color: #32425c;
+}
+
+.company ul {
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    
+    padding: 0;
+    list-style: none;
+}
+
+.slider-controls ul {
+    padding: 0;
+    list-style: none;
+}
+
+.slider-controls li:hover {
+    background-color: #293449;
+}
+
+.slider-controls li:active {
+    color: #32425c;
+    background-color: #ffffff;
+}
+
+.btn {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #ff5357;
+}
+
+.btn:hover {
+    background-color: #ca2c37;
+}
+
+.btn:active {
+    background-color: #ba2732;
+}
+
+.main-footer {
+    font-size: 18px;
+    line-height: 24px;
+    
+    background-color: #32425c;
+}
+
+.main-footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-nav-top a {
+    color: #f3f7f9;
+}
+
+.footer-nav-middle a {
+    color: #ffd180;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav a:active {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.footer-bottom {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.mail,
+.htmlacademy {
+    color: #ffd180;
+}
+
+.mail:hover,
+.htmlacademy:hover {
+    text-decoration: underline;
+}
+
+.mail:active,
+.htmlacademy:active {
+    text-decoration: none;
+    color: #ee3643;
+}
+
+.modal {
+    display: none;
+}
+/*Начинаются стили каталога*/
+
+.basket-good {
+    background-color: #ee3643;
+}
+
+.user-name {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    
+    background-color: #ffffff;
+}
+
+.user-atribute a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+    
+    text-decoration: underline;
+}
+
+.user-atribute a:hover {
+    color: #ee3643;
+}
+
+.user-name:active {
+    opacity: 0.3;
+}
+
+.user-atribute a:active {
+    color: #32425c;
+    opacity: 0.3;
+}
+
+.breadcrumbs {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.breadcrumbs a {
+    color: inherit;
+}
+
+.catalog-main h1 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    
+    background-color: #f2f6f8;
+    text-transform: uppercase;
+}
+
+.filters ul {
+    padding: 0;
+    margin: 0;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #000000;
+    
+    text-transform: uppercase;
+}
+
+.filter label {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    
+    text-transform: uppercase;
+}
+
+.filter-button {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    
+    text-transform: uppercase;
+    background-color: #ffffff;
+    
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+}
+
+.catalog ul {
+    padding: 0;
+    margin: 0;
+}
+
+.catalog-item-title {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.old-price {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: #999999;
+    
+    text-decoration: line-through;
+}
+
+.new-price { 
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+    
+    background-color: #ee3643;
+}
+
+.btn-buy,
+.btn-bookmark {
+    font-size: 14px;
+    line-height: 18px;
+    
+    text-transform: uppercase;
+}
+
+.btn-buy {
+    color: #ffffff;
+    
+    background-color: #63a63e;
+    border-bottom: 3px solid #367315;
+}
+
+.btn-buy:hover {
+    background-color: #5fbb2d;
+}
+
+.btn-buy:active {
+    background-color: #518534;
+    border-bottom: 3px solid #518534;
+}
+
+.btn-bookmark {
+    color: #32425c;
+    
+    background-color: #ffffff;
+    border: 3px solid #63a63e;
+}
+
+.btn-bookmark:hover {
+    border: 3px solid #32425c;
+}
+
+.btn-bookmark:active {
+    opacity: 0.3;
+}
+
