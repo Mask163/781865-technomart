@@ -37,12 +37,20 @@ a {
 }
 
 .logo-top {
+    width: 220px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    
     font-size: 24px;
     line-height: 24px;
     color: #ffffff;
+    text-align: center;
     
     text-transform: uppercase;
     background-color: #ee3643;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
 }
 
 .logo-top:hover {
@@ -52,6 +60,7 @@ a {
 .logo-top:active {
     background-color: #ba2732;
 }
+
 
 .search-field {
     background-color: #293449;
@@ -95,13 +104,9 @@ a {
 }
 
 .number {
-    padding: 8px 70px;
-    
     font-size: 21px;
     line-height: 21px;
     color: #ee3643;
-    
-    border: 3px solid #ffffff;
 }
 
 .adress {
@@ -113,6 +118,7 @@ a {
 .user-navigation,
 .site-navigation {
     list-style: none;
+    margin: 0;
 }
 
 .user-navigation a {
@@ -138,8 +144,6 @@ a {
     font-size: 17px;
     line-height: 17px;
     background-color: #32425c;
-    
-    border-bottom: 5px solid #293449;
 }
 
 .site-navigation a {
@@ -233,6 +237,7 @@ a {
 }
 
 .main-footer ul {
+    margin: 0;
     padding: 0;
     list-style: none;
 }
@@ -257,6 +262,8 @@ a {
 .footer-bottom {
     font-size: 16px;
     line-height: 18px;
+    
+    background-color: #293449;
 }
 
 .mail,
@@ -452,3 +459,247 @@ a {
     opacity: 0.3;
 }
 
+/*Макросетка*/
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid blue;
+}
+
+.header-top .container {
+    display: flex;
+}
+
+.search {
+    width: 270px;
+    
+/*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.header-top a {
+    width: 150px;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.header-top {
+    margin-bottom: 45px;
+}
+
+.header-middle {
+    display: flex;
+    margin-bottom: 43px;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid red; 
+}
+
+.header-middle p,
+.user-navigation {
+    margin: 0;
+}
+
+.header-middle p {
+    width: 300px;
+    margin-right: 20px;
+    
+   /*    Временно для сетки*/
+    outline: 2px solid yellow; 
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin-right: 70px;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow; 
+}
+
+.user-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow; 
+}
+
+.user-navigation li:first-child {
+    width: 120px;
+}
+
+.user-navigation li:last-child {
+    width: 150px;
+}
+
+.site-navigation {
+    display: flex;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid red; 
+}
+
+.main-nav a {
+    display: block;
+    width: 134px;
+    
+    text-align: center;
+    
+     /*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.main-nav a:nth-child(5) {
+    width: 136px;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid red;
+}
+
+.company {
+    width: 540px;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.contact {
+     width: 300px;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.main-footer {
+    margin-top: 85px;
+}
+
+.main-footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top,
+.footer-middle,
+.footer-bottom {
+    display: flex;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid red;
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.logo-bottom {
+    width: 220px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    
+    text-transform: uppercase;
+    background-color: #ee3643;
+    font-size: 30px;
+    line-height: 30px;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.footer-nav-top {
+    width: 550px;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.footer-top,
+.footer-middle {
+    justify-content: space-between;
+}
+
+.footer-nav-top a {
+    display: block;
+    width: 110px;
+    
+    padding-top: 40px;
+    text-align: center;
+}
+
+.footer-top {
+    margin-bottom: 35px;
+}
+
+.footer-middle p {
+    width: 380px;
+    margin: 0;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.footer-nav-middle {
+    width: 540px;
+}
+
+.footer-nav-middle a {
+    display: block;
+    width: 135px;
+}
+
+.footer-middle {
+    margin-bottom: 52px;
+}
+
+.footer-safe {
+    width: 240px;
+    
+    margin: 0;
+    margin-right: 140px;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.footer-social {
+    display: flex;
+    width: 160px;
+    
+    margin: 0;
+    padding: 0;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
+    font-size: 12px;
+}
+
+.footer-feedback,
+.footer-copyright {
+    width: 140px;
+    margin: 0;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.footer-feedback {
+    margin-left: 100px;
+    margin-right: 20px;
+}
