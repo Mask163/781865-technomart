@@ -15,6 +15,11 @@ a {
     text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -51,7 +56,99 @@ input[type="radio"].visually-hidden {
 }
 
 .header-top a {
+    display: block;
+    padding: 12px 0;
+    width: 150px;
+    
+    
+    
+    box-sizing: border-box;
+    vertical-align: middle;
     color: #ffffff;
+}
+
+.header-top svg {
+    position: relative;
+    top: 2px;
+    
+    padding-left: 17px;
+    padding-right: 15px;
+}
+
+.search:hover path{
+    fill: rgba(255, 255, 255, 1);
+}
+
+.search:hover .search-field,
+.search:hover,
+.header-top a:not(.order):hover {
+    background-color: #212a3a;
+}
+
+.search-field:focus {
+    background-color: #ffffff;
+}
+
+.header-top input {
+    margin-top: 12px;
+}
+
+.header-top .bookmarks {
+    position: relative;
+    padding-left: 44px;
+}
+
+.bookmarks::before {
+    content: "";
+    
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    
+    width: 14px;
+    height: 16px;
+    
+    background-image:url("../img/icon-bookmark.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    
+    opacity: 0.3;
+}
+
+.header-top .basket {
+    position: relative;
+    padding-left: 50px;
+}
+
+.basket::before {
+    content: "";
+    
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    
+    width: 15px;
+    height: 15px;
+    
+    background-image:url("../img/cart-icon.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    
+    opacity: 0.3;
+}
+
+.bookmarks:hover::before,
+.basket:hover::before {
+    opacity: 1;
+}
+
+.bookmarks:active::before,
+.basket:active::before {
+    opacity: 0.5;
+}
+
+.order {
+    text-align: center;
 }
 
 .logo-top {
@@ -67,16 +164,18 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     background-color: #ee3643;
     
-    /*    Временно для сетки*/
-    outline: 2px solid yellow;
+    box-shadow: 0 5px 0 0 #b52933;
+    
 }
 
 .logo-top:hover {
     background-color: #ca2c37;
+    box-shadow: 0 5px 0 0 #9a212a;
 }
 
 .logo-top:active {
     background-color: #ba2732;
+    box-shadow: 0 5px 0 0 #8e1e26;
 }
 
 
@@ -89,18 +188,8 @@ input[type="radio"].visually-hidden {
     background-color: #63a63e;
 }
 
-.search:hover .search-field,
-.search:hover,
-.header-top a:not(.order):hover {
-    background-color: #212a3a;
-}
-
 .order:hover {
     background-color: #5fbb2d;
-}
-
-.search:focus {
-    background-color: #ffffff;
 }
 
 .bookmarks:active,
@@ -114,23 +203,40 @@ input[type="radio"].visually-hidden {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.header-middle p {
-    font-size: 16px;
-    line-height: 23px;
-    color: #ee3643;
-    font-style: italic;
-}
-
 .number {
+    position: relative;
+    
+    display: block;
+    border: 3px solid white;
+    padding: 9px 0 9px 70px;
+    
+    vertical-align: middle;
     font-size: 21px;
     line-height: 21px;
     color: #ee3643;
+}
+
+.number::before {
+    content: "";
+    
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    
+    width: 19px;
+    height: 19px;
+    
+    background-image: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .adress {
     font-size: 14px;
     line-height: 24px;
     color: #32425c;
+    
+    text-align: center;
 }
 
 .user-navigation,
@@ -140,13 +246,51 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation a {
+    display: block;
+    box-sizing: border-box;
+    
+    padding: 12px 0;
+    
     font-size: 21px;
     line-height: 24px;
     color: #000000;
+    background-color: #ffffff;
 }
 
-.user-navigation li {
-    background-color: #ffffff;
+.user-navigation .login-link {
+    position: relative;
+    padding-left: 47px;
+}
+
+.login-link::before {
+    content: "";
+    
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    
+    width: 20px;
+    height: 17px;
+    
+    background-image: url(../img/icon-login.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
+    opacity: 0.3;
+}
+
+.login-link:hover::before {
+    background-image: url(../img/icon-login2.svg);
+    opacity: 1;
+}
+
+.login-link:active::before {
+    background-image: url(../img/icon-login.svg);
+    opacity: 1;
+}
+
+.user-navigation .registration {
+    padding-left: 24px;
 }
 
 .user-navigation a:hover {
@@ -154,8 +298,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation a:active {
-    color: #000000;
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav {
@@ -166,10 +309,6 @@ input[type="radio"].visually-hidden {
     background-color: #32425c;
     
     margin-bottom: 60px;
-}
-
-.site-navigation a {
-    color: #ffffff;
 }
 
 .site-navigation a:hover {
@@ -492,26 +631,16 @@ input[type="radio"].visually-hidden {
     width: 940px;
     margin: 0 auto;
     
-    /*    Временно для сетки*/
-    outline: 2px solid blue;
+    
 }
 
 .header-top .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .search {
     width: 270px;
-    
-/*    Временно для сетки*/
-    outline: 2px solid yellow;
-}
-
-.header-top a {
-    width: 150px;
-    
-    /*    Временно для сетки*/
-    outline: 2px solid yellow;
 }
 
 .header-top {
@@ -521,9 +650,6 @@ input[type="radio"].visually-hidden {
 .header-middle {
     display: flex;
     margin-bottom: 43px;
-    
-    /*    Временно для сетки*/
-    outline: 2px solid red; 
 }
 
 .header-middle p,
@@ -532,11 +658,17 @@ input[type="radio"].visually-hidden {
 }
 
 .header-middle p {
+    box-sizing: border-box;
     width: 300px;
     margin-right: 20px;
+    padding-left: 52px;
+    padding-right: 56px;
+    padding-top: 5px;
     
-   /*    Временно для сетки*/
-    outline: 2px solid yellow; 
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
+    font-style: italic;
 }
 
 .information {
@@ -544,18 +676,12 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
     width: 270px;
     margin-right: 70px;
-    
-    /*    Временно для сетки*/
-    outline: 2px solid yellow; 
 }
 
 .user-navigation {
     display: flex;
     justify-content: space-between;
     width: 280px;
-    
-    /*    Временно для сетки*/
-    outline: 2px solid yellow; 
 }
 
 .user-navigation li:first-child {
@@ -568,19 +694,17 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
     display: flex;
-    
-    /*    Временно для сетки*/
-    outline: 2px solid red; 
 }
 
 .main-nav a {
     display: block;
     width: 134px;
+    padding-top: 19px;
+    padding-bottom: 17px;
+    color: #ffffff;
     
     border-bottom: 5px solid #293449;
-    text-align: center;
-    
-    
+    text-align: center; 
 }
 
 .main-nav a:nth-child(5) {
