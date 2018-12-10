@@ -15,6 +15,24 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-header {
     background-color: #f4f7f9;
 }
@@ -88,12 +106,12 @@ a {
 .bookmarks:active,
 .basket:active {
     background-color: #161d29;
-    opacity: 0.6;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .order:active {
     background-color: #518534;
-    opacity: 0.6;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .header-middle p {
@@ -141,9 +159,13 @@ a {
 }
 
 .main-nav {
+    width: 940px;
+    
     font-size: 17px;
     line-height: 17px;
     background-color: #32425c;
+    
+    margin-bottom: 60px;
 }
 
 .site-navigation a {
@@ -155,8 +177,9 @@ a {
 }
 
 .site-navigation a:active {
-    opacity: 0.5;
     background-color: #1d2739;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: #1d2739;
 }
 
 .service {
@@ -554,10 +577,10 @@ a {
     display: block;
     width: 134px;
     
+    border-bottom: 5px solid #293449;
     text-align: center;
     
-     /*    Временно для сетки*/
-    outline: 2px solid yellow;
+    
 }
 
 .main-nav a:nth-child(5) {
@@ -702,4 +725,122 @@ a {
 .footer-feedback {
     margin-left: 100px;
     margin-right: 20px;
+}
+
+/*Стили каталога*/
+
+.user {
+    width: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: auto;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.user-atribute {
+    display: flex;
+    
+    margin: 0;
+}
+
+
+.breadcrumbs {
+    display: flex;
+    width: 380px;
+    margin: 0;
+    margin-bottom: 23px;
+    
+    justify-content: space-between;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid red;
+}
+
+.breadcrumbs a {
+    display: block;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.catalog-main h1 {
+    margin: 0;
+    padding: 0;
+    
+    margin-bottom: 20px;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid red;
+}
+
+.filters fieldset {
+    padding: 0;
+    margin: 0;
+}
+
+.filters {
+    width: 220px;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid red;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter fieldset {
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.filter fieldset:first-child {
+    margin-bottom: 45px;
+}
+
+.filter fieldset:nth-child(2) {
+    margin-bottom: 80px;
+}
+
+.filter-button {
+    width: 140px;
+}
+
+.flex-catalog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog {
+    width: 700px;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid red;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.catalog-item {
+    width: 220px;
+    
+    /*    Временно для сетки*/
+    outline: 2px solid yellow;
+}
+
+.catalog-list li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+} 
+
+.catalog-list li:nth-child(3n) {
+    margin-right: 0;
 }
