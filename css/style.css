@@ -118,25 +118,21 @@ input[type="radio"].visually-hidden {
     outline: none;
 }
 
-.search-field::placeholder {
+.search-field::-webkit-input-placeholder {
     color: #ffffff;
     opacity: 1;
 }
-
-.search-field::-webkit-input-placeholder {
-  color: #ffffff;
-} 
-
 .search-field:-ms-input-placeholder {
-  color: #ffffff;
+    color: #ffffff;
+    opacity: 1;
 }
-
 .search-field::-ms-input-placeholder {
-  color: #ffffff;
+    color: #ffffff;
+    opacity: 1;
 }
-
-.search-field::-moz-placeholder {
-  color: #ffffff;
+.search-field::placeholder {
+    color: #ffffff;
+    opacity: 1;
 }
 
 .header-top .bookmarks {
@@ -557,6 +553,7 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     width: 10px;
     height: 10px;
+    vertical-align: middle;
     
     border: 2px solid #ffffff;
     border-radius: 50%;
