@@ -47,15 +47,15 @@ for (var i = 0; i < buttonsBookmark.length; i++) {
 var modalFeedback = document.querySelector('.modal-feedback');
 var btnContact = document.querySelector('.btn-contact');
 var login = modalFeedback.querySelector('[name=user-name]');
-var form = modalFeedback.querySelector("form");
-var email = modalFeedback.querySelector("[name=user-mail]");
+var form = modalFeedback.querySelector('form');
+var email = modalFeedback.querySelector('[name=user-mail]');
 var closeModalFeedback = modalFeedback.querySelector('.modal-close');
 
 var isStorageSupport = true;
 var storage = "";
   
 try {
-    storage = localStorage.getItem("login");
+    storage = localStorage.getItem('login');
 } catch (err) {
     isStorageSupport = false;
 }
@@ -74,28 +74,28 @@ btnContact.addEventListener('click', function (evt) {
 
 closeModalFeedback.addEventListener('click', function () {
     modalFeedback.classList.remove('modal-show');
-    modalFeedback.classList.remove("modal-error");
+    modalFeedback.classList.remove('modal-error');
 });
 
-form.addEventListener("submit", function (evt) {
+form.addEventListener('submit', function (evt) {
     if (!login.value || !email.value) {
         evt.preventDefault();
-        modalFeedback.classList.remove("modal-error");
+        modalFeedback.classList.remove('modal-error');
         modalFeedback.offsetWidth = modalFeedback.offsetWidth;
-        modalFeedback.classList.add("modal-error");
+        modalFeedback.classList.add('modal-error');
     } else {
         if (isStorageSupport) {
-        localStorage.setItem("login", login.value);
+        localStorage.setItem('login', login.value);
         }
     }
   });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
     	evt.preventDefault();
-    	if (modalFeedback.classList.contains("modal-show")) {
-        	modalFeedback.classList.remove("modal-show");
-        	modalFeedback.classList.remove("modal-error");
+    	if (modalFeedback.classList.contains('modal-show')) {
+        	modalFeedback.classList.remove('modal-show');
+        	modalFeedback.classList.remove('modal-error');
       }
     }
   });
